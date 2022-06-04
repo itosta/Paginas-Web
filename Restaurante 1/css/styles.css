@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: biome;
+}
+
+.cabeza{
+    background-image: url(restaurante2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* PARTE DE ARRIBA */
+.inicio .logo_inicio{
+    width: 50px;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.cabeza .inicio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabeza .enlaces_inicio{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-right: 2%;
+}
+
+.cabeza a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cabeza a:hover{
+    color: black;
+}
+
+/* IMAGEN EN CENTRO */
+.centro{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro .logo_header{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 30%;
+}
+
+.centro .nombre_centro{
+    top: 75%;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* CUERPO */
+.cuerpo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    align-items: center;
+}
+
+.texto_cuerpo{
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.imagen_cuerpo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_div{
+    width: 1100px;
+    height: 600px;
+}
+
+/* IMAGENES DE GALERIA */
+.slider{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate ease-out;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.img_slider{
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+/* CAJA NEGRA DE MAS INFORMACIÓN */
+.info{
+    color: white;
+    background-color: black;
+}
+
+.info p{
+    margin: 0;
+    font-size: 40px;
+    padding: 80px;
+    text-align: center;
+}
+
+/* INFO */
+.horarios{
+    color: white;
+    font-size: 20px;
+}
+
+.contenedor_horarios{
+    display: flex;
+    margin: 100px;
+    justify-content: space-between;
+}
+
+.contenedor_horarios div p{
+    text-decoration: overline underline;
+}
