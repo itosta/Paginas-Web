@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    font-family: Cambria;
+}
+
+.cabeza{
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* PARTE DE ARRIBA */
+.inicio .logo_inicio{
+    width: 8%;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.cabeza .inicio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabeza .enlaces_inicio{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-right: 2%;
+}
+
+.cabeza a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cabeza a:hover{
+    color: rgb(122, 122, 122);
+}
+
+/* IMAGEN EN CENTRO */
+.centro{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro .logo_header{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 50%;
+}
+
+.centro .nombre_centro{
+    top: 55%;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* CABEZA */
+
+.contenedor_cabeza{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 101, 243);
+    padding: 10px;
+}
+
+.titulo_cabeza{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2%;
+}
+
+.enlaces_cabeza{
+    font-size: 13px;
+    font-weight: 550;   
+
+}
+
+.link_cabeza{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.enlaces_cabeza .link_cabeza:hover{
+    color: rgb(6, 85, 154);
+}
+
+
+/* SLIDER */
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    margin-bottom: -4%;
+    margin-top: -4%;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate ease-out;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.img_slider{
+    margin-top: 1%;
+    margin-bottom: -10%;
+    width: 120%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+/* OBJETIVO Y VISIÓN */
+.cuerpo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.texto_cuerpo{
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.imagen_cuerpo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_div{
+    width: 1100px;
+    height: 600px;
+}
+
+/* PALABRAS DE LA ESCUELA */
+/* .info{
+
+} */
+
+.info p{
+    margin: 0;
+    font-size: 20px;
+    padding: 80px;
+    text-align: center;
+}
+
+/* PIE DE PAGINA */
+.horarios{
+    background-color: rgb(47, 47, 47);
+    padding: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.contenedor_horarios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* ICONOS */
+.iconos{
+    display: flex;
+}
+
+.iconos img{
+    width: 50%;
+}
+
+.iconos a{
+    color: white;
+}
+

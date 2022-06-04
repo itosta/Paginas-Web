@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria;
+}
+
+.contenedor{
+    margin: auto;
+    overflow: hidden;
+
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 600px;
+    background: hsla(0, 0%, 100%, 0.83);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsl(345, 13%, 6%),  hsla(229, 26%, 32%, 0.597)), url(../images/picture-1.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(345, 13%, 6%),  hsla(229, 26%, 32%, 0.597)), url(../images/picture-1.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 20px 20px 0px 0px;
+}
+
+nav > a{
+    font-size: 17px;
+    color: white;
+    font-weight: 300;
+    /* lo vuelve mas ligero */
+    text-decoration: none;
+    /* quita la linea de enlace */
+    margin-right: 15px;
+    /* separa los elementos */
+}
+
+nav > a:hover{ 
+    text-decoration: underline;
+}
+
+.titulo1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo1 h2{
+    font-weight: 300;
+}
+
+/* Mantiene la ola abajo */
+.efecto-ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* PALABRAS DE LA ESCUELA */
+.info{
+    color: black;
+}
+
+.info p{
+    margin: 0;
+    font-size: 20px;
+    padding: 80px;
+    text-align: center;
+}
+
+/*TALLERES*/
+.cuerpo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.texto_cuerpo{
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.imagen_cuerpo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_div{
+    width: 1100px;
+    height: 600px;
+}
+
+/* FOTOS DE LOS DOCENTES */
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2%;
+}
+.contenedor_galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.img_galeria{
+    width: 50%;
+}
+
+/* GALERIA DE FOTOS - ZONAS */
+.zonas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedor_zonas{
+    display: block;    
+    text-align: center;
+    
+}
+.contenedor_zonas img{
+    border-style: groove; 
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor_zonas p{
+    font-size: 20px;
+}
+
+
+/* PIE DE PAGINA */
+.horarios{
+    background-color: rgb(47, 47, 47);
+    padding: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.contenedor_horarios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ICONOS */
+.iconos{
+    display: flex;
+}
+
+.iconos img{
+    width: 50%;
+}
+
+.iconos a{
+    color: white;
+}
